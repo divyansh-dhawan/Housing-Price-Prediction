@@ -1,59 +1,93 @@
-# 🏠 House Price Prediction
+# House Price Prediction
 
-This project demonstrates a complete machine learning pipeline for predicting house prices using Python and popular data science libraries. It involves data cleaning, exploratory data analysis (EDA), feature engineering, and regression modeling to deliver accurate predictions.
+A machine learning project to predict house prices using various regression techniques and exploratory data analysis. All workflows and analyses are presented in Jupyter Notebooks for clarity and reproducibility.
 
-## 📁 Project Structure
+## Table of Contents
 
-- `House Price Prediction.ipynb`: Jupyter Notebook that walks through each stage of the workflow, including code, plots, and results.
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-## 🧰 Technologies Used
+## Overview
 
-- Python
-- Pandas & NumPy for data manipulation
-- Matplotlib & Seaborn for visualization
-- Scikit-learn for machine learning models and evaluation
+This repository demonstrates the development of machine learning models that estimate house prices based on various input features. The project covers data preprocessing, exploratory data analysis (EDA), feature engineering, model selection, training, evaluation, and result visualization within interactive notebooks.
 
-## 🚀 Workflow Overview
+## Features
 
-1. **Data Loading**  
-   The dataset (`housing.csv`) is loaded and basic data inspection is performed using `.info()` and `.describe()`.
+- In-depth Exploratory Data Analysis (EDA) of housing data
+- Data cleaning and preprocessing
+- Feature engineering and selection
+- Implementation of multiple regression algorithms (e.g., Linear Regression, Decision Trees, Random Forests, etc.)
+- Model evaluation using metrics such as RMSE, MAE, and R²
+- Visualization of results and feature importances
+- End-to-end reproducible workflow in Jupyter Notebooks
 
-2. **Data Preprocessing**
-   - Handling missing values
-   - Encoding categorical features (if any)
-   - Feature scaling and transformation
+## Tech Stack
 
-3. **Exploratory Data Analysis (EDA)**
-   - Distribution of numerical features
-   - Correlation heatmaps
-   - Pair plots and scatter plots to understand feature relationships
+- **Jupyter Notebook** (100% of codebase)
+- **Python** (via the notebook kernel)
+- Libraries: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`
 
-4. **Model Building**
-   - Linear Regression
-   - Decision Tree Regressor
-   - Random Forest Regressor
-   - Optionally other models like Ridge, Lasso, or XGBoost can be added
+## Getting Started
 
-5. **Model Evaluation**
-   Metrics used:
-   - Mean Absolute Error (MAE)
-   - Mean Squared Error (MSE)
-   - R² Score
+### Prerequisites
 
-   Evaluation also includes visualization of predicted vs actual values.
+- Python 3.7 or above
+- Jupyter Notebook or JupyterLab
 
-## 📊 Results
+### Installation
 
-The model performances are compared, and the best one is chosen based on evaluation metrics. Visual plots help interpret the reliability and variance of predictions.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/divyansh-dhawan/House-Price-Prediction.git
+   cd House-Price-Prediction
+   ```
 
-## 📂 Dataset
+2. **Install dependencies**
+   If a `requirements.txt` is provided:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   Otherwise, install manually:
+   ```bash
+   pip install pandas numpy scikit-learn matplotlib seaborn
+   ```
 
-Make sure the file `housing.csv` is located in the same directory as the notebook.
+3. **Start Jupyter Notebook**
+   ```bash
+   jupyter notebook
+   ```
+   Open the desired notebook file to start exploring.
 
-## 🛠️ How to Run
+## Usage
 
-1. Clone this repository or download the notebook.
-2. Install the required libraries:
-   `pip install pandas numpy matplotlib seaborn scikit-learn`
-3. Launch the notebook:
-   `jupyter notebook House\ Price\ Prediction.ipynb`
+- Open any notebook (`.ipynb`) file to view the step-by-step workflow.
+- Follow the cells sequentially to reproduce results or modify them for experimentation.
+- You can use your own dataset by replacing the sample data and adjusting preprocessing as needed.
+
+## Project Structure
+
+```
+House-Price-Prediction/
+├── data/             # (optional) Data files for training/testing
+├── notebooks/        # Jupyter Notebooks with analysis and models
+├── requirements.txt  # List of dependencies (if available)
+└── README.md         # Project documentation
+```
+
+## Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for improvements, new features, or bug fixes.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+*Happy Predicting!*
